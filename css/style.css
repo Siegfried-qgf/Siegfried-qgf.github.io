@@ -4076,11 +4076,11 @@ li.feature-2 {
     color:#2c3e50
 }
 .header-info {
-    width:63%;
+    width:73%;
     margin:auto;
-    font-size:16px;
+    font-size:20px;
     color:#eaeadf;
-    background:rgba(0,0,0,.5);
+    background:rgba(255,255,240,.5);
     padding:15px;
     margin-top:22px;
     letter-spacing:0;
@@ -4101,6 +4101,7 @@ li.feature-2 {
 }
 .header-info p {
     margin:0;
+    color: rgba(0,0,0,.9);
     font-family:'Ubuntu',sans-serif;
     font-weight:700
 }
