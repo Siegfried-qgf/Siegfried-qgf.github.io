@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="/"/>
-  <updated>2021-11-07T11:10:22.117Z</updated>
+  <updated>2021-11-09T15:20:39.377Z</updated>
   <id>/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>深度学习-注意力机制</title>
+    <link href="/2021/11/09/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0-%E6%B3%A8%E6%84%8F%E5%8A%9B%E6%9C%BA%E5%88%B6/"/>
+    <id>/2021/11/09/深度学习-注意力机制/</id>
+    <published>2021-11-09T15:19:01.000Z</published>
+    <updated>2021-11-09T15:20:39.377Z</updated>
+    
+    <summary type="html">
+    
+      复习一下注意力机制
+    
+    </summary>
+    
+      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="学习笔记" scheme="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
