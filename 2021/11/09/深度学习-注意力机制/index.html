@@ -364,7 +364,7 @@
       <p class="entry-census">
         <span>
           <a href="hojun.cn">
-            <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/custom/avatar.jpg">
+            <img src="https://cdn.jsdelivr.net/gh/Siegfried-qgf/cdn-1@1.4/img/avatar/avater2.jpg">
           </a>
         </span>
         <span>
@@ -388,20 +388,20 @@
         <div class="entry-content">
           <h1 id="深度学习-注意力机制"><a href="#深度学习-注意力机制" class="headerlink" title="深度学习-注意力机制"></a>深度学习-注意力机制</h1><h2 id="注意力机制"><a href="#注意力机制" class="headerlink" title="注意力机制"></a>注意力机制</h2><h3 id="软注意力机制"><a href="#软注意力机制" class="headerlink" title="软注意力机制"></a>软注意力机制</h3><p>我们很容易想到使用全连接层、RNN、CNN来进行表示学习，提取特征。但他们各自都存在一些缺点。</p>
 <p>全连接层的输入不可以为边长，CNN提取的特征被限制在卷积核大小内，RNN则存在长程依赖问题。</p>
-<p>attention机制的提出给出了对于文本特征表示学习的新方法，它借鉴了人脑处理信息的机制。我们知道人每时每刻都要接收大量的信息，而我们会对这些信息进行筛选，忽略掉我们不关心的信息，注意到重要的信息。attention机制也是这样。拿文本信息举例<img src="D:\blog\cdn\mdimg\image-20211109223220943.png" alt="image-20211109223220943"></p>
+<p>attention机制的提出给出了对于文本特征表示学习的新方法，它借鉴了人脑处理信息的机制。我们知道人每时每刻都要接收大量的信息，而我们会对这些信息进行筛选，忽略掉我们不关心的信息，注意到重要的信息。attention机制也是这样。拿文本信息举例<img src="https://cdn.jsdelivr.net/gh/Siegfried-qgf/cdn-1@1.4/mdimg/image-20211109223220943.png" alt="image-20211109223220943"></p>
 <p>q为查询向量，我们想注意到与q关系密切的那些token，就对每一个token xn进行打分。这里用softmax的结果表示每个token对于q的相关程度即注意力α。再根据阿尔法计算输入信息的加权平均。</p>
 <h4 id="打分函数s"><a href="#打分函数s" class="headerlink" title="打分函数s"></a>打分函数s</h4><p>通常这里的s可以是</p>
-<p><img src="D:\blog\cdn\mdimg\image-20211109224839746.png" alt="image-20211109224839746"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Siegfried-qgf/cdn-1@1.4/mdimg/image-20211109224839746.png" alt="image-20211109224839746"></p>
 <h3 id="硬注意力机制"><a href="#硬注意力机制" class="headerlink" title="硬注意力机制"></a>硬注意力机制</h3><p>就是说α只取0或1，也就是只选最于q相关的token进行输出，通常在RL中使用</p>
 <h3 id="键值对注意力机制"><a href="#键值对注意力机制" class="headerlink" title="键值对注意力机制"></a>键值对注意力机制</h3><p>把每个输入信息用(K,V)键值对来表示，计算注意力用K，加权乘的是V，这样把两步分开，可以使模型更加强大</p>
-<p><img src="D:\blog\cdn\mdimg\image-20211109225011483.png" alt="image-20211109225011483"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Siegfried-qgf/cdn-1@1.4/mdimg/image-20211109225011483.png" alt="image-20211109225011483"></p>
 <h3 id="多头注意力机制"><a href="#多头注意力机制" class="headerlink" title="多头注意力机制"></a>多头注意力机制</h3><p>用多个查询q，同时对输入信息中选取多组信息，每个注意力头关注输入信息的不同部分</p>
-<p><img src="D:\blog\cdn\mdimg\image-20211109225247396.png" alt="image-20211109225247396"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Siegfried-qgf/cdn-1@1.4/mdimg/image-20211109225247396.png" alt="image-20211109225247396"></p>
 <h2 id="自注意力机制self-attention"><a href="#自注意力机制self-attention" class="headerlink" title="自注意力机制self-attention"></a>自注意力机制self-attention</h2><p>N to N Encoder,对于文本序列，分别将每个token作为查询向量q，对所有token求注意力再加权平均，作为该token的hidden state。</p>
-<p><img src="D:\blog\cdn\mdimg\image-20211109230014113.png" alt="image-20211109230014113"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Siegfried-qgf/cdn-1@1.4/mdimg/image-20211109230014113.png" alt="image-20211109230014113"></p>
 <h3 id="self-attention的QKV模式"><a href="#self-attention的QKV模式" class="headerlink" title="self-attention的QKV模式"></a>self-attention的QKV模式</h3><p>用三个参数矩阵把x序列映射到QKV</p>
-<p><img src="D:\blog\cdn\mdimg\image-20211109230537127.png" alt="image-20211109230537127"></p>
-<h3 id="Multi-head-self-attention"><a href="#Multi-head-self-attention" class="headerlink" title="Multi-head self attention"></a>Multi-head self attention</h3><p><img src="D:\blog\cdn\mdimg\image-20211109230731029.png" alt="image-20211109230731029"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Siegfried-qgf/cdn-1@1.4/mdimg/image-20211109230537127.png" alt="image-20211109230537127"></p>
+<h3 id="Multi-head-self-attention"><a href="#Multi-head-self-attention" class="headerlink" title="Multi-head self attention"></a>Multi-head self attention</h3><p><img src="https://cdn.jsdelivr.net/gh/Siegfried-qgf/cdn-1@1.4/mdimg/image-20211109230731029.png" alt="image-20211109230731029"></p>
 <p>把上面的多来几次，拼接后经过全连接层。</p>
 
         </div>
@@ -467,7 +467,7 @@
 
       <section class="author-profile">
         <div class="info" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
-          <a href="hojun.cn" class="profile gravatar"><img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/custom/avatar.jpg" itemprop="image" alt="Siegfried" height="70" width="70"></a>
+          <a href="hojun.cn" class="profile gravatar"><img src="https://cdn.jsdelivr.net/gh/Siegfried-qgf/cdn-1@1.4/img/avatar/avater2.jpg" itemprop="image" alt="Siegfried" height="70" width="70"></a>
           <div class="meta">
             <span class="title">Author</span>
             <h3 itemprop="name">
