@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="/"/>
-  <updated>2021-11-09T15:28:17.635Z</updated>
+  <updated>2021-11-15T10:26:21.163Z</updated>
   <id>/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>机器学习-无监督特征学习-主成分分析PCA</title>
+    <link href="/2021/11/15/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0-%E6%97%A0%E7%9B%91%E7%9D%A3%E7%89%B9%E5%BE%81%E5%AD%A6%E4%B9%A0-PCA/"/>
+    <id>/2021/11/15/机器学习-无监督特征学习-PCA/</id>
+    <published>2021-11-15T10:20:01.000Z</published>
+    <updated>2021-11-15T10:26:21.163Z</updated>
+    
+    <summary type="html">
+    
+      降维打鸡！
+    
+    </summary>
+    
+      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="学习笔记" scheme="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>深度学习-注意力机制</title>
